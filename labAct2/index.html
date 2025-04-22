@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Activity 2</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #32418C, #003A70);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar{
+            background: #FBD117;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+
+        .navbar .logo{
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #FBD117;
+            
+        }
+        img{
+            width: 50px;
+        }
+
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;	    
+            font-size: 20px;
+        }
+
+        .navbar a{
+            padding: 20px;
+            color: #FBD117;
+            background-color: #034685;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        
+        }
+
+        a:hover{
+            background-color:#220871;
+        }
+
+        .navbar #home{
+            border-radius: 5px;
+        }
+
+        .hero{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 20px 120px;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 25px;
+        }
+
+        .hero-img{
+            flex: 1 1 250px;
+            display: flex;
+            justify-content: center;
+        
+        }
+
+        .hero-img img{
+            width: 600px;
+            height: 700px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 5px solid #FBD117;
+        }	
+
+        .hero-img img:hover{
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        .hero-text {
+            flex: 2 1 400px;
+            text-align: left;
+            max-width: 600px;
+            
+        }
+
+        .hero-text h1{
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+
+        .hero-text p{
+            margin-bottom: 30px;
+        }
+
+
+        .badges {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            }
+
+        .badge {
+            background-color: #FBD117;
+            color: #32418C;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 25px;
+            font-size: 14px;
+            border-radius: 20px;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .badge:hover {
+            transform: scale(1.05);
+        }
+
+        .badge img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+
+        .btn {
+            padding: 12px 25px;
+            background: #FBD117;
+            color: #32418C;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background: #DB8639;
+            color: #220871;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+
+        <div class="logo">
+            <img src="images/nulogo.png" alt="nulogo">
+        </div>
+        
+        <ul>
+            <li id="home"><a href="#home">Home</a></li>
+            <li id="resume"><a href="resume.html">Resume</a></li>
+        </ul>
+    </div>
+
+    
+    <section id="home" class="hero">
+        <div class="hero-img">
+            <img src="images/sgme.jpg" alt="Activity Photo">
+        </div>
+
+        <div class="hero-text">
+            <div class="badges">
+                <span class="badge">
+                    <img src="images/images.jpg" alt="stuff">
+                    CCIT Basketball Team
+                </span>
+                <span class="badge">
+                    <img src="images/wizards.jpg" alt="wizards">
+                    Wizard Circle Member 
+                </span>
+            </div>
+
+            
+            
+            <h1>Hi, I am Joseph Brian Natividad</h1>
+            <p>I am a BSIT with specialization of Mobile and Web Technology in, I am eager to learn
+                a lot and to study to become a good programmer. In the future I want to work at big companies.</p>
+            <a href="resume.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+</html>
