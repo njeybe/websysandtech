@@ -14,7 +14,6 @@ body{
 }
 
 .navbar{
-    background: #32418C;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +43,17 @@ body{
 
 .navbar a:hover{
     color: #FBD117;
+}
+
+.navbar li{
+    border-radius: 20px;
+    background-color: #32418C;
+    padding: 10px;
+}
+
+.navbar li:hover{
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
 }
 
 .hero{
@@ -77,18 +87,33 @@ body{
     transition: transform 0.3s;
 }
 
-.hero-text{
+.hero-texts{
+    width: 400px;
+    height: 200px;
+}
+
+.hero-card{
     flex: 2 1 400px;
     text-align: left;
     max-width: 600px;
+    height: 265px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    border: 5px solid #fbd117;
+    background-color: #022241;
 }
 
-.hero-text h1{
+.hero-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.hero-card h1{
     font-size: 1.2em;
     margin-bottom: 30px;
 }
 
-.hero-text p{
+.hero-card p{
     font-size: 1.2em;
     margin-bottom: 30px;
 }
