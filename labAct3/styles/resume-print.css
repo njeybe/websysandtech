@@ -1,0 +1,112 @@
+@media print{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Times New Roman', serif;
+        font-size: 12px;
+        line-height: 1.5;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header, .content{
+        width: 100%;
+        max-width: 7.5in;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .header{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .header img{
+        width: 200px;
+        height: 200px;
+        border-radius: 20%;
+        object-fit: cover;
+    }
+    .header-info{
+        padding-left: 50px;
+        text-align: left;
+    }
+    .header-info h1{
+        font-family: 'Times New Roman', serif;
+        font-size: 35px;
+        color: #32418C;
+        
+    }
+    
+    .header-info p{
+        margin: 5px 0;
+        color: #333;
+        font-weight: bold;
+        font-size: 16px;
+        
+    }
+
+    .section{
+        margin-bottom: 15px;
+    }
+
+    .header h2{
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 2px;
+    }
+
+    .section p, .section ul{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .section ul{
+        list-style: none;
+        padding-left: 15px;
+    }
+
+    .section ul li{
+       margin-bottom: 5px;
+    }
+
+    .edu-entry{
+        margin-bottom: 10px;
+    }
+
+    .edu-entry strong{
+       font-weight: bold;
+    }
+
+    .skills-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .btn-back, .btn-print{
+        display: none;
+    }
+
+    .section{
+        page-break-inside: avoid;
+    }
+
+    html,body{
+        height: 100%;
+    }
+
+    @page{
+        size: A4;
+        margin: 20mm;
+    }
+}
