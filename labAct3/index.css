@@ -295,6 +295,12 @@ body{
     font-size: 1.25rem;
 }
 
+.project-content p{
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
 .project-tags{
     display: flex;
     flex-wrap: wrap;
