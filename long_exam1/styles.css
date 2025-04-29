@@ -24,14 +24,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     width: 100%;
+    background: #fbd117;
     
 }
 
 .nav-links{
     position: absolute;
     left: 42%;
+    bottom: 10%;
     transform: translateY(-50%);
     list-style: none;
     display: flex;
@@ -42,7 +43,7 @@ body{
 }
 
 .navbar a{
-    color: white;
+    color: #32418c;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
@@ -79,7 +80,6 @@ body{
 }
 
 .new-arrivals,
-.collections,
 .testimonials,
 .cta{
     padding: 50px 20px;
@@ -87,7 +87,6 @@ body{
 }
 
 .product-grid,
-.category-grid,
 .testimonial-grid{
     display: grid;
     gap: 20px;
@@ -98,13 +97,7 @@ body{
     width: 100%;
     border-radius: 8px;
     margin-top: 30px;
-}
-
-.category{
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 30px;
+    max-height: 400px;
 }
 
 .testimonial-card{
@@ -147,3 +140,4 @@ footer{
     transform: translateY(-3.5px);
     transition: transform 0.4s; 
 }
+
