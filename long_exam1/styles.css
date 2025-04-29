@@ -97,14 +97,50 @@ body{
     width: 100%;
     border-radius: 8px;
     margin-top: 30px;
-    max-height: 400px;
+    height: 400px;
 }
 
 .testimonial-card{
-    background: #eaeaea;
+    background: #c9c9c9;
     padding: 20px;
     border-radius: 8px;
     margin-top: 30px;
+
+}
+.profile-card{
+    padding: 10px;
+    border-radius: 15px;
+}
+.profile-card img{
+   width: 200px;
+   border-radius: 20px;
+   align-items: center;
+}
+.profile{
+    background: #aaa;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.profile span{
+    align-items: center;
+    padding-top: 5px;
+}
+
+.profile p{
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.purchased{
+    margin-top: 20px;
+    max-height: 175px;
 }
 
 .cta button{
