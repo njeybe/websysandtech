@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero{
+    background: url(https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-6/469777716_1312353446872792_4887100999314881085_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=1PIWP0bdVwsQ7kNvwHgkOhS&_nc_oc=Adm0zyPniFGP-KHu33urh4ts5J34YWa7gnCNXAu85U0mxrmDyR0uuij9QAvDAVts2im1fAbme0fao1OeYRsHz7b0&_nc_zt=23&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=F5KR2MLmAOOglANM0QW4dg&oh=00_AfFA_rSFC_zg2kNzBCl_0ZlaDgfTDgRMDne2Ag65FuvgEw&oe=681601B9)no-repeat center center/cover;
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.nav-links{
+    position: absolute;
+    left: 42%;
+    transform: translateY(-50%);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    align-items: center;
+}
+
+.navbar a:hover{
+    color: lightblue;
+    transition: color 0.3s;
+}
+
+.navbar input[type="text"]{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    width: 250px;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    transition: background 0.3s ease, width 0.3s ease;
+}
+
+.navbar input[type="text"]:focus{
+    background: #fff;
+    width: 300px;
+}
+
+.hero-text {
+    text-align: center;
+    margin-top: 475px;
+}
+.hero-text h1{
+    font-size: 4rem;
+}
+
+
+
