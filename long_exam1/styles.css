@@ -73,7 +73,9 @@ body{
 
 .hero-text {
     text-align: center;
-    margin-top: 530px;
+    position: absolute;
+    left: 35%;
+    top: 73%;
 }
 .hero-text h1{
     font-size: 4rem;
