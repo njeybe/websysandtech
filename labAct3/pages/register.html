@@ -64,13 +64,13 @@
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirmPassword').value;
         
-        // Check if passwords match
+        
         if(password !== confirmPassword) {
             alert("Passwords do not match!");
             return;
         }
         
-        // Get existing users or create empty array
+        
         let users = JSON.parse(localStorage.getItem('registeredUsers')) || [];
 
         if(users.some(user => user.username === username)) {
@@ -78,25 +78,25 @@
             return;
         }
 
-        // Check if email already exists
+       
         if(users.some(user => user.email === email)) {
             alert("This email is already registered!");
             return;
         }
         
-        // Add new user
+        
         users.push({
             name: fullname,
             username: username,
             email: email,
-            password: password // In a real app, you should hash this password!
+            password: password
         });
         
         // Save updated users array
         localStorage.setItem('registeredUsers', JSON.stringify(users));
         
         alert("Registration successful! Please login.");
-        window.location.href = "login.html"; // Redirect to login page
+        window.location.href = "login.html";
     });
     </script>
 </body>
