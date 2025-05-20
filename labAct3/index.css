@@ -96,25 +96,20 @@ body{
     flex: 2 1 400px;
     text-align: left;
     max-width: 600px;
-    height: 265px;
+    height: clamp(220px, 25vw, 265px);
     padding-left: 20px;
     padding-top: 20px;
     border-radius: 20px;
-    border: 5px solid #fbd117;
-    background-color: #022241;
+    
 }
 
 .hero-card:hover{
     transform: scale(1.05);
     transition: transform 0.3s;
 }
-.hero-card h1{
-    font-size: 1.2em;
-    margin-bottom: 30px;
-}
-
-.hero-card p{
-    font-size: 1.2em;
+.hero-card h1,
+.hero-card p {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.2em);
     margin-bottom: 30px;
 }
 
@@ -356,4 +351,45 @@ body{
 }
 .project-link:hover{
     color: #fbd117;
+}
+
+@media screen and (max-width: 575px) {
+
+    .hero-card h1,
+    .hero-card p {
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (tablets ≥ 768px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero-card {
+        height: 220px;
+        padding: 20px;
+    }
+
+    .hero-card h1,
+    .hero-card p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large devices (desktops ≥ 1024px) */
+@media screen and (min-width: 1024px) {
+    .hero-card{
+        flex: 2 1 400px;
+        text-align: left;
+        max-width: 600px;
+        height: clamp(220px, 25vw, 265px);
+        padding-left: 20px;
+        padding-top: 20px;
+        border-radius: 20px;
+    
+    }
+
+    .hero-card h1,
+.hero-card p {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.2em);
+    margin-bottom: 30px;
+}
 }
